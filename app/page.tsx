@@ -51,7 +51,7 @@ export default async function Home({
   // then, when done, return next frame
   return (
     <div>
-      <a href="https://framesjs.org">frames.js</a> homeframe{" "}
+      <a href="https://emotionull.art/">Phettaverse</a> Frame{" "}
       {process.env.NODE_ENV === "development" ? (
         <Link href="/debug">Debug</Link>
       ) : null}
@@ -63,8 +63,8 @@ export default async function Home({
         <FrameImage
           src={
             state.page === 1
-              ? "http://framesjs.org/og.png"
-              : `http://framesjs.org/frames/frame${state.page}.png`
+              ? "https://phettaverse.mypinata.cloud/ipfs/QmcYkXSMoa9rViP4enFtVYNeT2GKyUFPFBRNvJBTtNUMvU/1.png"
+              : `https://phettaverse.mypinata.cloud/ipfs/QmcYkXSMoa9rViP4enFtVYNeT2GKyUFPFBRNvJBTtNUMvU/${state.page}.png`
           }
         />
         {state.page !== 1 ? (
@@ -73,7 +73,7 @@ export default async function Home({
         {state.page < 6 ? (
           <FrameButton onClick={dispatch}>→</FrameButton>
         ) : (
-          <FrameButton href="https://framesjs.org">Open frames.js</FrameButton>
+          <FrameButton href="https://emotionull.art/">Learn More</FrameButton>
         )}
       </FrameContainer>
     </div>
