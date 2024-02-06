@@ -70,7 +70,7 @@ export default async function Home({
         {state.page !== 1 ? (
           <FrameButton onClick={dispatch}>←</FrameButton>
         ) : null}
-        {state.page < 6 ? (
+        {state.page < 3 ? (
           <FrameButton onClick={dispatch}>→</FrameButton>
         ) : (
           <FrameButton href="https://emotionull.art/">Learn More</FrameButton>
